@@ -1,0 +1,198 @@
+body{
+    height: 100%    ;
+}
+/*水平居中*/
+.m_auto{
+    width: 1100px;
+    margin: 0 auto;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    background: #f3f3f3;
+}
+/*导航栏*/
+ .nav{
+    width: 100%;
+    height: 64px;
+    border-top: 1px solid #b6b6b6;
+    border-bottom: 1px solid #c4c4c4;
+    background: url("../images/bg1.jpg");
+    box-shadow: 0 1px 3px #d8d7d7;
+}
+ .nav ul{
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 64px;
+}
+ .nav ul .logo{
+    width: 191px;
+    height: 29px;
+    display: inline-block;
+    text-indent: -999px;
+    margin-top: 18px;
+    margin-left: 18px;
+    background: url("../images/vip-logo.png") no-repeat 0px -144px;
+}
+ .nav ul li {
+    float: right;
+    margin-right: 25px;
+}
+ .nav ul li a{
+
+    color: #666;
+}
+/*banner*/
+.box .banner{
+    height: 38px;
+    border-top: 2px solid #4b4c4d;
+    background: #333333;
+
+}
+.box .bannerNav {
+    margin-left: 44px;
+}
+.box .bannerNav li{
+    float: left;
+}
+.box .bannerNav .active{
+    background: #0b68c8;
+}
+.box .banner .bannerNav li a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    width: 115px;
+    text-align: center;
+    line-height: 38px;
+}
+.dedede{
+    width: 1100px;
+    margin: 0 auto;
+    height: 1px;
+    background: #dedede;
+
+}
+.fff{
+    width: 1100px;
+    margin: 0 auto;
+    height: 1px;
+    background: #fff;
+
+}
+
+
+
+
+/*页脚*/
+.foot {
+    height: 200px;
+    /*background: deepskyblue;*/
+}
+.foot .topU{
+    width: 1198px;
+    margin: 55px 0 45px 0;
+    /*padding-bottom: 48px;*/
+    /*border-bottom: 1px solid #dedede;*/
+}
+.foot .topU .Box{
+    width: 180px;
+    height: 100px;
+    float: left;
+    padding-left:60px ;
+    position: relative;
+
+
+}
+.foot .topU .li1{
+    /*border-left: 1px solid #dedede;*/
+    border-right: 1px solid #dedede;
+    margin-left:45px ;
+}
+.foot .topU .li2{
+    margin-left:45px;
+    border-right: 1px solid #dedede;
+}
+.foot .topU .li3{
+    margin-left:45px;
+    border-right: 1px solid #dedede;
+}
+.foot .topU .li4{
+    margin-left:45px
+}
+.foot .topU .li1 span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    background: url("../images/vip-powers.png") no-repeat 0 -111px;
+}
+.foot .topU .li2 span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+
+    background: url("../images/vip-powers.png") no-repeat -51px -111px;
+}
+.foot .topU .li3 span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+
+    background: url("../images/vip-powers.png") no-repeat -102px -111px;
+}
+.foot .topU .li4 span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    background: url("../images/vip-powers.png") no-repeat -153px -111px;
+}
+.foot .topU .Box h2{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.foot .topU .Box ul{
+
+}
+.foot .topU .Box ul li a{
+    line-height: 18px;
+}
+.vipFoot{
+
+
+    margin: 10px 0 ;
+
+
+
+}
+.vipFoot p,.vipFoot a{
+    line-height: 24px;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+}
+.rc{
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    display: none;
+    width: 52px;
+    height: 52px;
+    background: #fbfbfb url("../images/rc.jpg") no-repeat;
+    border: #dcdbdb 1px solid;
+    text-indent: -9999px;
+    overflow: hidden;
+}

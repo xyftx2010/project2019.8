@@ -1,0 +1,102 @@
+.wrap{
+    width: 100%;
+    background: #f9f9f9;
+
+}
+.wrap .logo{
+    width: 1000px;
+    padding: 26px 0;
+}
+.wrap .logo div{
+    width: 175px;
+    height: 38px;
+
+    background:url("../images/indexicons.png") no-repeat 0 -565px ;
+}
+.content_l{
+    width: 100%;
+
+    background: #46a4e9;
+}
+.content_l .bg1{
+    width: 1000px;
+    height: 542px;
+    margin: 0 auto;
+    background: url("../images/mbanner.jpg");
+    position: relative;
+}
+.content_l .bg1 img{
+    position: absolute;
+    top: 66px;
+}
+/*登录界面*/
+.content_l .bg1 .login{
+    position: absolute;
+    top: 52px;
+    right: 40px;
+    width: 332px;
+    height: 446px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 22px 24px;
+}
+.content_l .bg1 .login i{
+    display: block;
+    width: 85px;
+    height: 24px;
+    background: url("../images/new-sso.png") no-repeat -100px -2px;
+    margin-bottom: 41px;
+}
+.content_l .bg1 .login .name,
+.content_l .bg1 .login .password{
+    width: 252px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    border: 1px solid #ddd;
+}
+.content_l .bg1 .login form{
+    position: relative;
+}
+.content_l .bg1 .login em{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+.content_l .bg1 .login .na{
+    top: 2px;
+    left: 2px;
+    background: url("../images/new-sso.png") no-repeat -90px -30px;
+}
+.content_l .bg1 .login .pass{
+    top: 46px;
+    left: 2px;
+    background: url("../images/new-sso.png") no-repeat -30px -30px;
+}
+.content_l .bg1 .login .checkbox{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 14px;
+    height: 14px;
+    background: url("../images/new-sso.png") no-repeat -20px -66px;
+}
+.content_l .bg1 .login .me{
+    display: inline-block;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+    /*页脚*/
+.lrFoot {
+    width: 100%;
+    background: #f9f9f9;
+}
+.lrFoot p{
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    line-height: 23px;
+    padding: 24px 0 56px;
+}

@@ -1,0 +1,315 @@
+/*banner*/
+.box .banner{
+    height: 38px;
+    border-top: 2px solid #4b4c4d;
+    background: #333333;
+
+}
+.box .bannerNav {
+    margin-left: 44px;
+}
+.box .bannerNav li{
+    float: left;
+}
+.box .bannerNav .active{
+    background: #0b68c8;
+}
+.box .banner .bannerNav li a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    width: 115px;
+    text-align: center;
+    line-height: 38px;
+}
+/*banner轮播图*/
+.box .bannerAuto{
+    height: 440px;
+    position: relative;
+}
+.box .bannerAuto span{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 160px;
+    cursor: pointer;
+    z-index: 2;
+}
+.box .bannerAuto .prve{
+    background: url("../images/vip-tips.png") no-repeat -4px -54px;
+}
+.box .bannerAuto .next{
+    left: 1065px;
+    background: url("../images/vip-tips.png") no-repeat -47px -54px;
+}
+.box .bannerAuto #bigImg{
+    height: 440px;
+}
+.box .bannerAuto #bigImg li {
+
+    position: absolute;
+    display: none;
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+.box .bannerAuto #bigImg .active{
+    display: block;
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+.box .smallImg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: url("../images/vip-tips.png") no-repeat 0px -100px;
+}
+.box .bannerAuto #smallImg{
+    margin: 0 auto;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+}
+.box .bannerAuto #smallImg li{
+    display: inline-block;
+}
+.box .bannerAuto #smallImg li a{
+    height: 48px;
+    display: inline-block;
+    margin: 10px 6px;
+    opacity: .7;
+    filter:alpha(opacity=70);
+    border: 2px solid transparent;
+}
+
+.box .bannerAuto #smallImg .active a{
+    opacity: 1;
+    border-color: #fff;
+    filter:alpha(opacity=100);
+}
+/*vip特权*/
+.box .content{
+    margin-top: 30px;
+}
+.box .content h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.box .content .contentMain{
+    position: relative;
+    height: 120px;
+    /*border-bottom: 1px solid #dedede;*/
+}
+.box .content .contentMain span{
+    display: inline-block;
+    width: 15px;
+    height: 26px;
+    position: absolute;
+    cursor: pointer;
+    }
+.box .content .contentMain .prve{
+    top: 46px;
+    background: url("../images/vip-bgs.png") no-repeat 0px -124px;
+}
+.box .content .contentMain .next{
+    top: 46px;
+    left: 1084px;
+    background: url("../images/vip-bgs.png") no-repeat -15px -124px;
+}
+*.box .content .contentMain div{
+    width: 1064px;
+    height: 111px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.box .content .contentMain div img{
+    position: absolute;
+    left: 0px;
+
+}
+.box .content .bannerAd{
+    margin: 20px 0 ;
+}
+/*推荐*/
+.box .content .recommend{
+    width: 1120px;
+    margin-bottom: 70px;
+}
+.box .content .recommend li{
+    position: relative;
+    float: left;
+    margin-right: 18px;
+}
+.box .content .recommend li img{
+    width: 205px;
+    height: 287px;
+}
+.box .content .recommend li a{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+}
+.box .content .recommend li p{
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+}
+.box .content .recommend li .grade{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 7px;
+    left:  175px;
+    color: #f60;
+}
+.box .content .recommend li .grade i{
+    font-size: 20px;
+}
+.box .content .recommend li .grade p{
+    display: inline-block;
+    font-size: 12px;
+    color: #f60;
+}
+.box .content .recommend li .green{
+     width: 75px;
+     height: 18px;
+     display: block;
+     position: absolute;
+     top: 10px;
+     left: 10px;
+     background: url("../images/vip-tips.png") no-repeat 0px -20px;
+
+ }
+.box .content .recommend li .orange{
+    width: 72px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url("../images/vip-tips.png") no-repeat -110px 0px;
+
+}
+.box .content .recommend li .definition {
+    position: absolute;
+    width: 28px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+    right: 6px;
+    bottom: 66px;
+}
+.box .content .recommend li .definition div{
+    position: absolute;
+    width: 28px;
+    height: 18px;
+    background: #000;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+.box .content .recommend li .definition p{
+    position: absolute;
+    font-size: 12px;
+    z-index: 1;
+    width: 28px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+}
+/*热映大片*/
+.box .content .hotShow{
+    width: 1120px;
+    margin-bottom: 70px;
+}
+.box .content .hotShow li{
+    position: relative;
+    float: left;
+    margin-right: 18px;
+}
+.box .content .hotShow li img{
+    width: 205px;
+    height: 287px;
+}
+.box .content .hotShow li a{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+}
+.box .content .hotShow li p{
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+}
+.box .content .hotShow li .grade{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 7px;
+    left:  175px;
+    color: #f60;
+}
+.box .content .hotShow li .grade i{
+    font-size: 20px;
+}
+.box .content .hotShow li .grade p{
+    display: inline-block;
+    font-size: 12px;
+    color: #f60;
+}
+.box .content .hotShow li .green{
+    width: 75px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url("../images/vip-tips.png") no-repeat 0px -20px;
+
+}
+.box .content .hotShow li .orange{
+    width: 72px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url("../images/vip-tips.png") no-repeat -110px 0px;
+
+}
+.box .content .hotShow li .definition {
+    position: absolute;
+    width: 28px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+    right: 6px;
+    bottom: 66px;
+}
+.box .content .hotShow li .definition div{
+    position: absolute;
+    width: 28px;
+    height: 18px;
+    background: #000;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+.box .content .hotShow li .definition p{
+    position: absolute;
+    font-size: 12px;
+    z-index: 1;
+    width: 28px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+}
+.box .content .dedede{
+    height: 1px;
+    background: #dedede;
+    width: 100%;
+}
+.box .content .fff{
+    height: 1px;
+    background: #fff;
+    width: 100%;
+}

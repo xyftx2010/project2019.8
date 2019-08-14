@@ -26,10 +26,25 @@
             <form action="#">
                 <em class="na"></em>
                 <em class="pass"></em>
-            <input type="text" class="name" placeholder="输入手机/邮箱/用户名">
-            <input type="text" class="password" placeholder="输入密码">
-            <span class="checkbox"></span><span class="me">&nbsp;记住我</span>
+                <p id="tip"></p>
+                <i class="reset1" id="reset1"></i>
+                <i class="reset2" id="reset2"></i>
+                <p class="phone">输入手机/邮箱/用户名</p>
+                <p class="pw">输入密码</p>
+                <input type="text" name="user"   class="name" >
+                <input type="password" name="passWord" class="password" >
+                <span class="checkbox"></span><span class="me">&nbsp;记住我</span>
+                <a href="register.html" class="reg">立即注册</a><b>&nbsp;|&nbsp;</b><a href="https://sso.baofeng.net/new/backpwd.htm">找回密码</a>
+                <input type="submit" name="submit" value="登&nbsp;&nbsp;&nbsp;&nbsp;录" class="sub">
+                <a href="http://service.baofeng.com/hhelpcenter/sanji/39" class="question"><b></b>&nbsp;遇到问题</a>
+                <a href="#" class="mp">手机验证登录></a>
             </form>
+        <div class="media">
+            <p>其他方式登录</p>
+            <a class="qq" href="https://sso.baofeng.net/new/thirdparty/authlogin?appid=6412&site=qq&next_action=http://i.baofeng.com/vip.html?page=1"></a>
+            <a class="wb" href="https://sso.baofeng.net/new/thirdparty/authlogin?appid=6412&site=sina&next_action=http://i.baofeng.com/vip.html?page=1"></a>
+            <a class="wx" href="https://sso.baofeng.net/new/thirdparty/authlogin?appid=6412&site=weixin&next_action=http://i.baofeng.com/vip.html?page=1"></a>
+        </div>
         </div>
     </div>
 </div>
@@ -37,5 +52,7 @@
     <p>客服 QQ：800111739 电话：4000987846（周一至周日9:30-21:30）
     <br>暴风集团股份有限公司</p>
 </div>
+<script src="js/ujiuye.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>

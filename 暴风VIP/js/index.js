@@ -14,8 +14,9 @@
         "success":function (res) {
             var x="";
             var y="";
-            var arr = eval("("+res+")");
+            var arr = res;
             // 获取数据
+            // console.log(JSON.parse(res));
             for (var i=0;i<arr.data.length;i++){
                 x+="<li><a href="+arr.data[i].href+"><img src="+arr.data[i].bigImg+" alt=''></a></li>"
                 y+="<li><a href="+arr.data[i].href+"><img src="+arr.data[i].smallImg+" alt=''></a></li>"
@@ -110,7 +111,7 @@
     })
 
     // bannerAdd
-    var oContent = document.getElementsByClassName("contentMain")[0];
+    var oContent = document.getElementById("content");
     var oSpan   = oContent.getElementsByTagName("span");
     var oImg   =  oContent.getElementsByTagName("img")[0];
     var tag1 =true
@@ -128,16 +129,15 @@
         }
     }
     // 电影数据
-    var oUl = document.getElementsByClassName("recommend")[0];
-    var oLi = oUl.getElementsByTagName("li");
-    var oI  = oUl.getElementsByTagName("i");
-    var oDefinition =  oUl.getElementsByClassName("definition");
-    var iUl = document.getElementsByClassName("hotShow")[0];
+    var oUl = document.getElementById("recommend");
+    var iUl = document.getElementById("hotShow");
     ajax({
         "url":"https://easy-mock.com/mock/5d4d20d466a6910d9b4fab56/example/2",
         "type":"get",
         "success":function (res) {
-            var arr = eval("("+res+")")
+            console.log(res);
+            var arr = res;
+
             iUl.innerHTML=getM(arr.hot_showing);
             oUl.innerHTML=getM(arr.recommend)
             // console.log(arr);
@@ -216,7 +216,7 @@
 
 
     // 锚点Js
-    var oRc = document.getElementsByClassName("rc")[0];
+    var oRc = document.getElementById("rc");
     window.onscroll = function () {
         var scrollTop = document.documentElement.scrollTop||document.body.scrollTop
         if(scrollTop >= 800){

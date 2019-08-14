@@ -1,6 +1,9 @@
 body{
     height: 100%    ;
 }
+img{
+    border: none;
+}
 /*水平居中*/
 .m_auto{
     width: 1100px;

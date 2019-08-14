@@ -1,5 +1,5 @@
 (function () {
-    var movie = document.getElementsByClassName("recommend")[0];
+    var movie = document.getElementById("recommend");
     var oDate = document.getElementById("oF");
     var oPop  = document.getElementById("pop");
     var oDl   = document.getElementsByTagName("dl")[0];
@@ -25,7 +25,7 @@
         "type":"get",
         "success":function (res) {
             var tag = "";
-            var arr = eval("("+res+")");
+            var arr = res;
             oPop.onclick = function () {
                 tag = true;
                 oDate.className="";
@@ -34,21 +34,26 @@
                     return b.welcome-a.welcome
                 });
                 movie.innerHTML =getM(arr.recommend);
+                console.log(arr.recommend);
                 // location.reload()
-            }
+             }
 
             oDate.onclick = function () {
                 tag=false;
                 oDate.className="active";
                 oPop.className = "";
+
                 arr.recommend.sort(function (a,b) {
-                    return Date.parse(b.date)-Date.parse(a.date)
+                    return Date.parse(b.date.replace(/-/g, "/"))-Date.parse(a.date.replace(/-/g, "/"))
                 });
                 movie.innerHTML =getM(arr.recommend);
                 // location.reload()
-            }
+                console.log(arr.recommend);
+            };
+
+
             arr.recommend.sort(function (a,b) {
-                return Date.parse(b.date)-Date.parse(a.date)
+                return Date.parse(b.date.replace(/-/g, "/"))-Date.parse(a.date.replace(/-/g, "/"))
             });
             movie.innerHTML =getM(arr.recommend);
             // if (tag==false){

@@ -165,7 +165,7 @@ function ajax(req) {
     request.onreadystatechange = function () {
         if(request.readyState === 4){
             if(request.status === 200){
-                req.success(request.response);
+                req.success(JSON.parse(request.responseText));
             }
         }
     }
@@ -175,10 +175,6 @@ function getM(movie) {
     var x=""
     for (var i=0;i<movie.length;i++){
         x+="<li><a href='#'><img src="+movie[i].image+" alt=''></a><a href=''>"+movie[i].title+"</a><p>"+movie[i].detail+"</p>";
-
-        // iUl.innerHTML=x;
-        // for (var i=0;i<iLi.length;i++){
-        //     var oDefP = iDefinition[i].getElementsByTagName("p")[0];
         switch (movie[i].type) {
             case 1:x+="<span class='green'></span>";break;
             case 2:x+="<span class='orange'></span>";break;
@@ -190,14 +186,7 @@ function getM(movie) {
         }
         var oGrade=movie[i].grade;
         var gradeArr= oGrade.split(".");
-        // var iGrade=iLi[i].get    ElementsByClassName("grade")[0];
-        // var iI = iGrade.getElementsByTagName("i")[0];
-        // var oOP = iGrade.getElementsByTagName("p")[0];
-        // oOP.innerHTML="."+gradeArr[1];
-        // iI.innerHTML=gradeArr[0];
         x+="<div class='grade'><i>"+gradeArr[0]+"</i><p>"+'.'+gradeArr[1]+"</p></div></li>"
-        // var oOSpan = iLi[i].getElementsByTagName("span")[0];
     }
-    // }
     return x
 }
